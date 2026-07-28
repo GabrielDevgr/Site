@@ -23,24 +23,6 @@ export default function Howitworks() {
     },
   ];
 
-  const devices = [
-    {
-      icon: <Tv className="w-5 h-5 text-purple-400" />,
-      title: 'Smart TV',
-      subtitle: 'Samsung, LG, TCL e outros',
-    },
-    {
-      icon: <Radio className="w-5 h-5 text-purple-400" />,
-      title: 'TV Box',
-      subtitle: 'Android Box, Formuler e mais',
-    },
-    {
-      icon: <Smartphone className="w-5 h-5 text-purple-400" />,
-      title: 'Mobile',
-      subtitle: 'Android e iOS',
-    },
-  ];
-
   return (
     <section id="como-funciona" className="py-16 px-4 max-w-6xl mx-auto">
       {/* Título da Seção */}
@@ -78,24 +60,57 @@ export default function Howitworks() {
       <div className="bg-[#120a21]/40 border border-purple-900/30 rounded-2xl p-6 md:p-8">
         <div className="text-center mb-6">
           <h3 className="text-2xl font-bold text-white mb-1">Baixe o app UniTV</h3>
-          <p className="text-slate-400 text-xs">Disponível para Smart TV, TV Box e celular.</p>
+          <p className="text-slate-400 text-xs">Compatível com Smart TV, TV Box e celular. Baixe o instalador direto para o seu aparelho e aproveite.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {devices.map((device, index) => (
-            <div
-              key={index}
-              className="bg-[#180f2d]/80 border border-purple-900/20 rounded-xl p-4 flex items-center gap-4 hover:border-purple-500/40 transition-colors"
-            >
-              <div className="w-10 h-10 rounded-xl bg-purple-900/30 border border-purple-500/20 flex items-center justify-center shrink-0">
-                {device.icon}
-              </div>
-              <div>
-                <h4 className="font-bold text-white text-sm">{device.title}</h4>
-                <p className="text-slate-400 text-[11px]">{device.subtitle}</p>
-              </div>
+          {/* Smart TV */}
+          <a
+            href="https://github.com/GabrielDevgr/DownloadsUniTV/releases/download/V1/Smartv.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#180f2d]/80 border border-purple-900/20 rounded-xl p-4 flex items-center gap-4 hover:border-purple-500/40 hover:bg-purple-600/10 transition-all group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-purple-900/30 border border-purple-500/20 flex items-center justify-center shrink-0 text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-all">
+              <Tv className="w-5 h-5" />
             </div>
-          ))}
+            <div>
+              <h4 className="font-bold text-white text-sm">Smart TV</h4>
+              <p className="text-slate-400 text-[11px]">Samsung, LG, TCL e outros</p>
+            </div>
+          </a>
+
+          {/* TV Box */}
+          <a
+            href="https://github.com/GabrielDevgr/DownloadsUniTV/releases/download/V1/TVbox.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#180f2d]/80 border border-purple-900/20 rounded-xl p-4 flex items-center gap-4 hover:border-purple-500/40 hover:bg-purple-600/10 transition-all group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-purple-900/30 border border-purple-500/20 flex items-center justify-center shrink-0 text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-all">
+              <Radio className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="font-bold text-white text-sm">TV Box</h4>
+              <p className="text-slate-400 text-[11px]">Android Box, Formuler e mais</p>
+            </div>
+          </a>
+
+          {/* Mobile */}
+          <a
+            href="https://github.com/GabrielDevgr/DownloadsUniTV/releases/download/V1/Mobile.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#180f2d]/80 border border-purple-900/20 rounded-xl p-4 flex items-center gap-4 hover:border-purple-500/40 hover:bg-purple-600/10 transition-all group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-purple-900/30 border border-purple-500/20 flex items-center justify-center shrink-0 text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-all">
+              <Smartphone className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="font-bold text-white text-sm">Mobile</h4>
+              <p className="text-slate-400 text-[11px]">Android e iOS</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>

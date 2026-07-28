@@ -27,7 +27,8 @@ const FAQS = [
 export default function FAQ() {
   const [open, setOpen] = useState(0);
   return (
-    <section id="faq" className="bg-obsidian text-white py-20 lg:py-28 border-t border-white/10">
+    /* id alterado para "duvidas" para bater com o href="#duvidas" do TopBar */
+    <section id="duvidas" className="bg-obsidian text-white py-20 lg:py-28 border-t border-white/10">
       <div className="max-w-3xl mx-auto px-4 sm:px-8">
         <div className="text-center">
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl">
