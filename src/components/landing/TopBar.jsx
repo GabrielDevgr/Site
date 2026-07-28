@@ -17,7 +17,7 @@ export default function TopBar() {
           <img 
             src="/logo.png" 
             alt="Carudo Recargas" 
-            className="w-14 h-14 rounded-full object-cover border-2 border-purple-500" 
+            className="w-16 h-16 rounded-full object-cover border-2 border-purple-500" 
           />
           <div>
             <h1 className="font-bold text-lg text-white leading-tight">Carudo Recargas</h1>
