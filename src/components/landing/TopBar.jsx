@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Tv, Wifi, Smartphone, X, Download, ShoppingCart } from 'lucide-react';
+import logoImg from '/public/logo.png'; // Importação direta para garantir funcionamento no build da Vercel
 
 export default function TopBar() {
   const [isDownloadOpen, setIsDownloadOpen] = useState(false);
@@ -15,9 +16,9 @@ export default function TopBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="/logo.png" 
+            src={logoImg} 
             alt="Carudo Recargas" 
-            className="w-16 h-16 rounded-full object-cover border-2 border-purple-500" 
+            className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-purple-400 shadow-[0_0_10px_rgba(168,85,247,0.4)]" 
           />
           <div>
             <h1 className="font-bold text-lg text-white leading-tight">Carudo Recargas</h1>
