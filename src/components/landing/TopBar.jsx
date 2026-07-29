@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tv, Wifi, Smartphone, X, Download, ShoppingCart } from 'lucide-react';
-import logoImg from '/public/logo.png'; // Importação direta para garantir funcionamento no build da Vercel
+import logoImg from '../../assets/logo.png'; // Caminho correto voltando 2 pastas (landing -> components -> src)
 
 export default function TopBar() {
   const [isDownloadOpen, setIsDownloadOpen] = useState(false);
