@@ -9,7 +9,10 @@ const WHATSAPP_URL = "https://wa.me/5500000000000";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-obsidian text-white border-t border-white/10">
+    <footer 
+      translate="no" 
+      className="notranslate bg-obsidian text-white border-t border-white/10"
+    >
       {/* trust badges strip */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-12 grid sm:grid-cols-3 gap-4">
         {[
@@ -62,7 +65,7 @@ export default function SiteFooter() {
             <ul className="space-y-2 text-sm text-zinc-400">
               <li><button onClick={() => scrollToId("planos")} className="hover:text-gold">Planos</button></li>
               <li><button onClick={() => scrollToId("como-funciona")} className="hover:text-gold">Como funciona</button></li>
-              <li><button onClick={() => scrollToId("faq")} className="hover:text-gold">Dúvidas</button></li>
+              <li><button onClick={() => scrollToId("duvidas")} className="hover:text-gold">Dúvidas</button></li>
             </ul>
           </div>
 
