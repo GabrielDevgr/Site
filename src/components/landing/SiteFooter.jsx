@@ -3,7 +3,7 @@ import { Headphones, ShieldCheck, Zap, MessageCircle } from "lucide-react";
 import { scrollToId } from "@/lib/checkout";
 
 // TODO: Substitua pelo número real do suporte no formato internacional sem símbolos (ex: 5542999999999)
-const WHATSAPP_NUMBER = "5500000000000"; 
+const WHATSAPP_NUMBER = "5542999280316"; 
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 const LOGO_URL =
