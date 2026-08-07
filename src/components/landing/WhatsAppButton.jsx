@@ -1,6 +1,6 @@
 import React from "react";
 
-const WHATSAPP_URL = "https://wa.me/5500000000000";
+const WHATSAPP_URL = "https://wa.me/5542999280316";
 
 export default function WhatsAppButton() {
   return (
